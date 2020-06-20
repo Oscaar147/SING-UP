@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Sing-Up</title>
+
+        <!-- Bootstrap CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.3/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            #register-form{
+                width: 300px;
+                background-color: white;
+                padding: 24px;
+                margin-right: auto;
+                margin-left: auto;
+
+           }
+            .input-label{
+                margin: 0;
+                margin-bottom: 4px;
+                margin-top: 12px ;
+            }
+            .input-item{
+               width: 100%;
+            }
+            #terms-check{
+                margin-top: 12px;
+                margin-bottom: 18px;
+            }
+        </style>
+    </head>
+    <body style="background-color: lightcoral;">
+        <h1 style="text-align: center;">Singup</h1>
+       <form id="register-form">
+           <div>
+               <p class="input-label">Full Name</p>
+               <input class="input-item"  type="text" name ="fullName" placeholder="Full Name">
+           </div>
+           <div>
+            <p class="input-label">Email</p>
+            <input class="input-item" type="email" name ="email" placeholder="Email">
+            </div>
+            <div>
+                <p class="input-label"> Password</p>
+                <input class="input-item" type="password" name ="password" placeholder="Password">
+            </div>
+            <div>
+                <p class="input-label">Confirm Password</p>
+                <input class="input-item" type="password" name ="confirm-password" placeholder="Confirm-Password">
+            </div>
+            <div>
+                <p class="input-label">Gender</p>
+                <input type="radio" name ="male" value="male">Male</input>
+                <input type="radio" name ="female" value="female">Female</input>
+                <input type="radio" name ="Other" value="Other">Other</input>
+            </div>
+            <div><br>
+                <p class="input-label">Security Question </p>
+                <select class="input-item" name="security-question">
+                    <option value="First-pet-name">What was your first pet name</option>
+                    <option value="First-job">What was your first job</option>
+                    <option value="Nick-name">What is your nick name</option>
+                </select>
+            </div>
+            <div>
+                <textarea name="answer" rows="6" cols="30" placeholder="answer"></textarea>
+            </div>
+            <div>
+                <input id="terms-check" type="checkbox" name="terms-conditions" value="accept"> I agree to acept terms and conditions
+            </div>
+            <div>
+                <input type="submit" value="register">
+            </div>
+
+
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Bootstrap JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </body>
+</html>
