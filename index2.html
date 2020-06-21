@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        body{
+            background-color: #f2f6ff;
+            margin: 0;
+        }
+        .icon {
+            width: 50px;
+            height: 50px;
+            padding-top: 16px;
+            padding-bottom: 16px;
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+        form{
+            background-color: white;
+            width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        .input-label{
+            margin: 0;
+            margin-bottom: 4px;
+            margin-top: 12px ;
+        }
+        h1{
+            font-size: 30px;
+            color: gray;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        p{
+            padding-right: 450px;
+            font-size: 18px;
+            color: gray;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .input-item{
+          font-size: 18px;
+          padding-bottom: 12px;
+          margin-bottom: 36px;
+          border-top: 36px;
+          border-left: 0;
+          border-right: 0;
+          border-bottom: 1px solid #ccc;
+        }
+        .input-container{
+           padding-top: 80px;
+           padding-bottom: 40px;
+           padding-left: 80px;
+           padding-right: 80px;
+        }
+        .register{
+           background-color: #0056ff;
+           padding-top: 12px;
+           padding-bottom: 12px;
+           padding-left:  24px;
+           padding-right: 24px;
+           font-size: 18px;
+           color: white;
+           border: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Register</h1>
+        <br>
+            <div>
+              <img src="http://pluspng.com/img-png/google-logo-png-open-2000.png" alt="logo Google" class="icon"> 
+              <img src="img/facebook_circle-512.webp" class="icon" >
+              <img src="img/google-logo-png-open-2000.png" class="icon">
+              <img src="img/linkedin.png" class="icon" >
+            </div>
+            <div>
+                <p class="input-label">Full Name</p> 
+                <input class="input-item"  type="text" name ="fullName" placeholder="Full Name" required>
+            </div>
+            <div>
+             <p class="input-label">Email</p>
+             <input class="input-item" type="email" name ="email" placeholder="Email" required>
+             </div>
+             <div>
+                 <p class="input-label"> Password</p>
+                 <input class="input-item" type="password" name ="password" placeholder="Password" required>
+             </div>
+             <div>
+                 <p class="input-label">Confirm Password</p>
+                 <input class="input-item" type="password" name ="confirm-password" placeholder="Confirm-Password" required>
+             </div>
+             <div>
+                 <p class="input-label">Age</p>
+                 <input class="input-item" type="number" name="Age" placeholder="Age" min="1" max="100" required >
+             </div>
+             <div>
+                 <p class="input-label">Birth-Date</p>
+                 <input class="input-item" type="date" name="Birth-Date" placeholder="Birth-Day" required>
+             </div>
+             <div>
+                 <p class="input-label">ID Picture</p>
+                 <input class="input-item" type="file" name="ID" required>
+             <div>
+             <div>
+                 <p class="input-label">Gender</p>
+                 <input type="radio" name ="male" value="male">Male</input>
+                 <input type="radio" name ="female" value="female">Female</input>
+                 <input type="radio" name ="Other" value="Other">Other</input>
+             </div>
+             <div><br>
+                 <p class="input-label">Security Question </p><br>
+                 <select class="input-item" name="security-question" required>
+                     <option value="First-pet-name">What was your first pet name</option>
+                     <option value=v "First-job">What was your first job</option>
+                     <option value="Nick-name">What is your nick name</option>
+                 </select>
+             </div>
+             <div>
+                 <textarea class="input-item" name="answer" rows="6" cols="30" placeholder="answer"></textarea>
+             </div>
+             <br>
+             <div>
+                <input class="input-item"   list="Like_the_sing_up" name="Like" placeholder="Like the sing up" />
+                <datalist id="Like_the_sing_up">
+                    <option value="si">
+                    <option value=" pero no al 100%">
+                    <option value="Regular">
+                    <option value="Poco">
+                    <option value="No">
+                </datalist>
+             </div>
+             <div>
+                <input id="terms-check" type="checkbox" name="terms-conditions" value="accept" required> I agree to acept terms and conditions
+            </div>
+            <br>
+             <div>
+                 <input type="submit" value="register" class="register">
+             </div> 
+
+    </form>
+    
+</body>
+</html>
