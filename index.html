@@ -17,7 +17,7 @@
         <![endif]-->
         <style>
             #register-form{
-                width: 300px;
+                width: 400px;
                 background-color: white;
                 padding: 24px;
                 margin-right: auto;
@@ -38,25 +38,40 @@
             }
         </style>
     </head>
-    <body style="background-color: lightcoral;">
-        <h1 style="text-align: center;">Singup</h1>
-       <form id="register-form">
+    <body style="background-color: lavender;">
+        
+       <form id="register-form"
+       method="GET">
+       <h1 style="text-align: center;">Register</h1>
+       <br>
            <div>
                <p class="input-label">Full Name</p>
-               <input class="input-item"  type="text" name ="fullName" placeholder="Full Name">
+               <input class="input-item"  type="text" name ="fullName" placeholder="Full Name" required>
            </div>
            <div>
             <p class="input-label">Email</p>
-            <input class="input-item" type="email" name ="email" placeholder="Email">
+            <input class="input-item" type="email" name ="email" placeholder="Email" required>
             </div>
             <div>
                 <p class="input-label"> Password</p>
-                <input class="input-item" type="password" name ="password" placeholder="Password">
+                <input class="input-item" type="password" name ="password" placeholder="Password" required>
             </div>
             <div>
                 <p class="input-label">Confirm Password</p>
-                <input class="input-item" type="password" name ="confirm-password" placeholder="Confirm-Password">
+                <input class="input-item" type="password" name ="confirm-password" placeholder="Confirm-Password" required>
             </div>
+            <div>
+                <p class="input-label">Age</p>
+                <input class="input-item" type="number" name="Age" placeholder="Age" min="1" max="100" required >
+            </div>
+            <div>
+                <p class="input-label">Birth-Date</p>
+                <input class="input-item" type="date" name="Birth-Date" placeholder="Birth-Day" required>
+            </div>
+            <div>
+                <p class="input-label">ID Picture</p>
+                <input class="input-item" type="file" name="ID" required>
+            <div>
             <div>
                 <p class="input-label">Gender</p>
                 <input type="radio" name ="male" value="male">Male</input>
@@ -65,9 +80,9 @@
             </div>
             <div><br>
                 <p class="input-label">Security Question </p>
-                <select class="input-item" name="security-question">
+                <select class="input-item" name="security-question" required>
                     <option value="First-pet-name">What was your first pet name</option>
-                    <option value="First-job">What was your first job</option>
+                    <option value=v "First-job">What was your first job</option>
                     <option value="Nick-name">What is your nick name</option>
                 </select>
             </div>
@@ -75,12 +90,22 @@
                 <textarea name="answer" rows="6" cols="30" placeholder="answer"></textarea>
             </div>
             <div>
-                <input id="terms-check" type="checkbox" name="terms-conditions" value="accept"> I agree to acept terms and conditions
+                <input id="terms-check" type="checkbox" name="terms-conditions" value="accept" required> I agree to acept terms and conditions
             </div>
             <div>
                 <input type="submit" value="register">
             </div>
-
+            <br>
+            <form>
+                <input class="input-item"   list="Like_the_sing_up" name="Like" placeholder="Like the sing up" />
+                <datalist id="Like_the_sing_up">
+                    <option value="si">
+                    <option value=" pero no al 100%">
+                    <option value="Regular">
+                    <option value="Poco">
+                    <option value="No">
+                </datalist>
+            </form>
 
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
